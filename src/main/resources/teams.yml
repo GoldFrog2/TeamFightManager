@@ -1,0 +1,13 @@
+teams:
+  Alpha:
+    color: RED
+    points: 0
+    members: []
+  Beta:
+    color: BLUE
+    points: 0
+    members: []
+  Gamma:
+    color: GREEN
+    points: 0
+    members: []

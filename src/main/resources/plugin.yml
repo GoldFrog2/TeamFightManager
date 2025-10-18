@@ -1,0 +1,18 @@
+name: TFM
+main: gf.tFM.TFM
+version: 1.0
+api-version: 1.20
+author: GoldFog
+description: Zaawansowany system drużyn z czatem i ochroną PvP
+commands:
+  Tfm:
+    description: Główna komenda pluginu TeamFightManager
+    usage: /Tfm <create|join|leave|list|set|chat|top>
+    aliases: [teamfight, teammanager]
+permissions:
+  tfm.create:
+    description: Pozwala tworzyć drużyny
+    default: op
+  tfm.set:
+    description: Pozwala przypisywać graczy do drużyn
+    default: op

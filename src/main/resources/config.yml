@@ -1,0 +1,12 @@
+default-teams:
+  - name: Alpha
+    color: RED
+  - name: Beta
+    color: BLUE
+  - name: Gamma
+    color: GREEN
+
+settings:
+  disable-friendly-fire: true
+  enable-team-chat-prefix: true
+  save-interval-minutes: 5
