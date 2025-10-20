@@ -6,7 +6,7 @@
 
     <groupId>com.github.GoldFrog2</groupId>
     <artifactId>TeamFightManager</artifactId>
-    <version>1.2</version> <packaging>jar</packaging>
+    <version>1.2.1</version> <packaging>jar</packaging>
 
     <name>TeamFightManager</name>
 
