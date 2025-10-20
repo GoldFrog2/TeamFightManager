@@ -1,14 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>gf</groupId>
-    <artifactId>TFM</artifactId>
-    <version>1.0</version>
-    <packaging>jar</packaging>
+    <groupId>com.github.GoldFrog2</groupId>
+    <artifactId>TeamFightManager</artifactId>
+    <version>1.1</version> <packaging>jar</packaging>
 
-    <name>TFM</name>
+    <name>TeamFightManager</name>
 
     <properties>
         <java.version>17</java.version>
@@ -18,46 +18,26 @@
     </properties>
 
     <repositories>
-        <!-- Główne repozytorium Paper/Spigot -->
         <repository>
             <id>papermc-repo</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
-
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-
         <repository>
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
-    </repositories>
+        </repositories>
 
     <dependencies>
-        <!-- Paper API 1.21.1 -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.21.1-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
+            <version>1.21.1-R0.1-SNAPSHOT</version> <scope>provided</scope>
         </dependency>
-
-        <!-- (Opcjonalnie) Spigot API — jeśli wolisz -->
-        <!--
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.21.1-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        -->
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Kompilator -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -66,23 +46,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
-            </plugin>
-
-            <!-- Shade (jeśli chcesz łączyć zależności w 1 plik .jar) -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.3.0</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals><goal>shade</goal></goals>
-                        <configuration>
-                            <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <minimizeJar>false</minimizeJar>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
