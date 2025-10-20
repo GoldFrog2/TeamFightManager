@@ -6,7 +6,7 @@
 
     <groupId>com.github.GoldFrog2</groupId>
     <artifactId>TeamFightManager</artifactId>
-    <version>1.1</version> <packaging>jar</packaging>
+    <version>1.2</version> <packaging>jar</packaging>
 
     <name>TeamFightManager</name>
 
@@ -26,13 +26,14 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
-        </repositories>
+    </repositories>
 
     <dependencies>
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.21.1-R0.1-SNAPSHOT</version> <scope>provided</scope>
+            <version>1.20.1-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -47,6 +48,7 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-        </plugins>
+
+            </plugins>
     </build>
 </project>
